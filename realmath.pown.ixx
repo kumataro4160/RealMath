@@ -1,10 +1,14 @@
-﻿export module realmath.pown;
+﻿module;
+
+#include <cstdint>
+
+export module realmath.pown;
 
 export import realmath.basic;
 
 export namespace realmath
 {
-	constexpr float64_t pow(float64_t x, uint8_t y)noexcept
+	constexpr float64_t pow(float64_t x, std::uint8_t y)noexcept
 	{
 		const float64_t x2 = x * x;
 		const float64_t x4 = x2 * x2;
@@ -25,7 +29,7 @@ export namespace realmath
 		return ret;
 	}
 
-	constexpr float64_t pow(float64_t x, uint16_t y)noexcept
+	constexpr float64_t pow(float64_t x, std::uint16_t y)noexcept
 	{
 		const float64_t x2 = x * x;
 		const float64_t x4 = x2 * x2;
@@ -62,7 +66,7 @@ export namespace realmath
 		return ret;
 	}
 
-	constexpr float64_t pow(float64_t x, uint32_t y)noexcept
+	constexpr float64_t pow(float64_t x, std::uint32_t y)noexcept
 	{
 		const float64_t x2 = x * x;
 		const float64_t x4 = x2 * x2;
@@ -131,39 +135,39 @@ export namespace realmath
 		return ret;
 	}
 
-	constexpr float64_t pow(float64_t x, int8_t y)noexcept
+	constexpr float64_t pow(float64_t x, std::int8_t y)noexcept
 	{
 		if(y >= 0)
 		{
-			return pow(x, static_cast<uint8_t>(y));
+			return pow(x, static_cast<std::uint8_t>(y));
 		}
 		else
 		{
-			return 1.0 / pow(x, static_cast<uint8_t>(-y));
+			return 1.0 / pow(x, static_cast<std::uint8_t>(-y));
 		}
 	}
 
-	constexpr float64_t pow(float64_t x, int16_t y)noexcept
+	constexpr float64_t pow(float64_t x, std::int16_t y)noexcept
 	{
 		if(y >= 0)
 		{
-			return pow(x, static_cast<uint16_t>(y));
+			return pow(x, static_cast<std::uint16_t>(y));
 		}
 		else
 		{
-			return 1.0 / pow(x, static_cast<uint16_t>(-y));
+			return 1.0 / pow(x, static_cast<std::uint16_t>(-y));
 		}
 	}
 
-	constexpr float64_t pow(float64_t x, int32_t y)noexcept
+	constexpr float64_t pow(float64_t x, std::int32_t y)noexcept
 	{
 		if(y >= 0)
 		{
-			return pow(x, static_cast<uint32_t>(y));
+			return pow(x, static_cast<std::uint32_t>(y));
 		}
 		else
 		{
-			return 1.0 / pow(x, static_cast<uint32_t>(-y));
+			return 1.0 / pow(x, static_cast<std::uint32_t>(-y));
 		}
 	}
 }

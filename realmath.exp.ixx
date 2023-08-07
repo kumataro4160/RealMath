@@ -1,6 +1,7 @@
 ﻿module;
 
 #include <cmath>
+#include <cstdint>
 
 export module realmath.exp;
 
@@ -67,7 +68,8 @@ export namespace realmath
 		if(1.0e9 <= x)
 		{
 			const float64_t a = exp_secure(x / 1.0e9);
-			return pow(a, 1000000000UL);
+			constexpr std::uint32_t billion = 1000000000UL;
+			return realmath::pow(a, billion);
 		}
 		if(8.0 <= x)
 		{
@@ -76,9 +78,9 @@ export namespace realmath
 			a *= a;//a^4
 			return a * a;//a^8
 		}
-		const uint8_t q = static_cast<uint8_t>(x);
+		const std::uint8_t q = static_cast<std::uint8_t>(x);
 		x -= q;
-		return exp_limited(x) * pow(e, q);
+		return exp_limited(x) * realmath::pow(e, q);
 	}
 
 	constexpr float32_t exp_secure(float32_t x)noexcept
