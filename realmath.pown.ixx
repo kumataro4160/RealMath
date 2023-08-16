@@ -6,7 +6,7 @@ export module realmath.pown;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t pow(float64_t x, std::uint8_t y)noexcept
 	{

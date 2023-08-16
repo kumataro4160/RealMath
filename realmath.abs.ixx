@@ -6,7 +6,7 @@ export module realmath.abs;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t abs_secure(float64_t x)noexcept;
 	constexpr float32_t abs_secure(float32_t x)noexcept;
@@ -41,7 +41,7 @@ export namespace realmath
 import realmath.numeric_limits;
 import realmath.isnan;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t abs_secure(float64_t x)noexcept
 	{

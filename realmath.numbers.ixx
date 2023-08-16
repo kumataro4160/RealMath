@@ -6,7 +6,7 @@ export module realmath.numbers;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t e = std::numbers::e;
 	constexpr float64_t inv_e = 1.0 / e;

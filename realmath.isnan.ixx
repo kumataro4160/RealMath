@@ -2,7 +2,7 @@
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float32_t isnan(float32_t x)noexcept
 	{

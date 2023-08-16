@@ -6,7 +6,7 @@ export module realmath.cos;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t cos_secure(float64_t x)noexcept;
 	constexpr float32_t cos_secure(float32_t x)noexcept;
@@ -42,12 +42,12 @@ import realmath.numeric_limits;
 import realmath.numbers;
 import realmath.isnan;
 
-namespace realmath
+namespace kuma
 {
 	constexpr float64_t cos_limited(float64_t x_32)noexcept;
 }
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t cos_secure(float64_t x)noexcept
 	{
@@ -77,7 +77,7 @@ export namespace realmath
 	}
 }
 
-namespace realmath
+namespace kuma
 {
 	//a0 = 2(1 - cos(x/32))
 	constexpr float64_t calc_a0(float64_t x0)noexcept

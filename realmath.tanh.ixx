@@ -6,7 +6,7 @@ export module realmath.tanh;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t tanh_secure(float64_t x)noexcept;
 	constexpr float32_t tanh_secure(float32_t x)noexcept;
@@ -42,7 +42,7 @@ import realmath.numeric_limits;
 import realmath.isnan;
 import realmath.exp;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t tanh_secure(float64_t x)noexcept
 	{

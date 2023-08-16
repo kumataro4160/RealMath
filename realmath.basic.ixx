@@ -1,6 +1,6 @@
 ﻿export module realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	using float64_t = double;
 	using float32_t = float;

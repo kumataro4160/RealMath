@@ -4,7 +4,7 @@
 
 export module realmath.range;
 
-export namespace realmath
+export namespace kuma
 {
 	template <class T>
 	class range

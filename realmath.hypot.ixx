@@ -6,7 +6,7 @@ export module realmath.hypot;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t hypot_secure(float64_t x, float64_t y)noexcept;
 	constexpr float32_t hypot_secure(float32_t x, float32_t y)noexcept;
@@ -42,7 +42,7 @@ import realmath.numeric_limits;
 import realmath.isnan;
 import realmath.sqrt;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t hypot_secure(float64_t x, float64_t y)noexcept
 	{

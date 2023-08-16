@@ -1,12 +1,12 @@
 ﻿module;
 
-#include <cmath>
+#include <limits>
 
 export module realmath.numeric_limits;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t float64_t_min = std::numeric_limits<float64_t>::min();
 	constexpr float64_t float64_t_max = std::numeric_limits<float64_t>::max();

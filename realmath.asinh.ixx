@@ -6,7 +6,7 @@ export module realmath.asinh;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t asinh_secure(float64_t x)noexcept;
 	constexpr float32_t asinh_secure(float32_t x)noexcept;
@@ -43,7 +43,7 @@ import realmath.isnan;
 import realmath.sqrt;
 import realmath.log;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t asinh_secure(float64_t x)noexcept
 	{

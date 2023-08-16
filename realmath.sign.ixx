@@ -2,7 +2,7 @@
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr sign_t sign(float32_t x)noexcept
 	{

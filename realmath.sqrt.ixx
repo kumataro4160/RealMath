@@ -6,7 +6,7 @@ export module realmath.sqrt;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t sqrt_secure(float64_t x)noexcept;
 	constexpr float32_t sqrt_secure(float32_t x)noexcept;
@@ -41,12 +41,12 @@ export namespace realmath
 import realmath.numeric_limits;
 import realmath.isnan;
 
-namespace realmath
+namespace kuma
 {
 	constexpr float64_t sqrt_limited(float64_t x)noexcept;
 }
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t sqrt_secure(float64_t x)noexcept
 	{
@@ -95,7 +95,7 @@ export namespace realmath
 	}
 }
 
-namespace realmath
+namespace kuma
 {
 	// 0.25 < x < 2.0
 	constexpr float64_t sqrt_limited(float64_t x)noexcept

@@ -4,7 +4,7 @@ export import realmath.basic;
 import realmath.numeric_limits;
 import realmath.abs;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr bool iscloseto0(float64_t x)noexcept
 	{

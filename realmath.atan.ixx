@@ -6,7 +6,7 @@ export module realmath.atan;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t atan_secure(float64_t x)noexcept;
 	constexpr float32_t atan_secure(float32_t x)noexcept;
@@ -43,12 +43,12 @@ import realmath.numbers;
 import realmath.isnan;
 import realmath.sqrt;
 
-namespace realmath
+namespace kuma
 {
 	constexpr float64_t atan_limited(float64_t x)noexcept;
 }
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t atan_secure(float64_t x)noexcept
 	{
@@ -91,7 +91,7 @@ export namespace realmath
 	}
 }
 
-namespace realmath
+namespace kuma
 {
 	// -sqrt(2.0) + 1.0 <= x <= sqrt(2.0) - 1.0
 	constexpr float64_t atan_limited(float64_t x)noexcept

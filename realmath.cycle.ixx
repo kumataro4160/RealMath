@@ -6,7 +6,7 @@ export module realmath.cycle;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t cycle_secure(float64_t x, float64_t length)noexcept;
 	constexpr float32_t cycle_secure(float32_t x, float32_t length)noexcept;
@@ -42,7 +42,7 @@ import realmath.numeric_limits;
 import realmath.isnan;
 import realmath.floor;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t cycle_secure(float64_t x, float64_t length)noexcept
 	{

@@ -6,7 +6,7 @@ export module realmath.arctan;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t arctan_secure(float64_t x, float64_t y)noexcept;
 	constexpr float32_t arctan_secure(float32_t x, float32_t y)noexcept;
@@ -44,7 +44,7 @@ import realmath.isnan;
 import realmath.iscloseto0;
 import realmath.atan;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t arctan_secure(float64_t x, float64_t y)noexcept
 	{

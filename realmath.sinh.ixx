@@ -6,7 +6,7 @@ export module realmath.sinh;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t sinh_secure(float64_t x)noexcept;
 	constexpr float32_t sinh_secure(float32_t x)noexcept;
@@ -42,7 +42,7 @@ import realmath.numeric_limits;
 import realmath.isnan;
 import realmath.exp;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t sinh_secure(float64_t x)noexcept
 	{

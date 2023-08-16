@@ -6,7 +6,7 @@ export module realmath.tan;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t tan_secure(float64_t x)noexcept;
 	constexpr float32_t tan_secure(float32_t x)noexcept;
@@ -44,7 +44,7 @@ import realmath.iscloseto0;
 import realmath.sin;
 import realmath.cos;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t tan_secure(float64_t x)noexcept
 	{

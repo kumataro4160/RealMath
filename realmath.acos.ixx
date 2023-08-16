@@ -6,7 +6,7 @@ export module realmath.acos;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t acos_secure(float64_t x)noexcept;
 	constexpr float32_t acos_secure(float32_t x)noexcept;
@@ -45,7 +45,7 @@ import realmath.iscloseto0;
 import realmath.sqrt;
 import realmath.arctan;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t acos_secure(float64_t x)noexcept
 	{

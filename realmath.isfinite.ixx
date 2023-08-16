@@ -3,7 +3,7 @@
 export import realmath.basic;
 import realmath.numeric_limits;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float32_t isfinite(float32_t x)noexcept
 	{

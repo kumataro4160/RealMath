@@ -7,7 +7,7 @@ export module realmath.pow;
 export import realmath.basic;
 export import realmath.pown;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t pow_secure(float64_t x, float64_t y)noexcept;
 	constexpr float32_t pow_secure(float32_t x, float32_t y)noexcept;
@@ -44,7 +44,7 @@ import realmath.isnan;
 import realmath.exp;
 import realmath.log;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t pow_secure(float64_t x, float64_t y)noexcept
 	{

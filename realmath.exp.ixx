@@ -7,7 +7,7 @@ export module realmath.exp;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t exp_secure(float64_t x)noexcept;
 	constexpr float32_t exp_secure(float32_t x)noexcept;
@@ -44,12 +44,12 @@ import realmath.numbers;
 import realmath.isnan;
 import realmath.pown;
 
-namespace realmath
+namespace kuma
 {
 	constexpr float64_t exp_limited(const float64_t x_n)noexcept;
 }
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t exp_secure(float64_t x)noexcept
 	{
@@ -69,7 +69,7 @@ export namespace realmath
 		{
 			const float64_t a = exp_secure(x / 1.0e9);
 			constexpr std::uint32_t billion = 1000000000UL;
-			return realmath::pow(a, billion);
+			return kuma::pow(a, billion);
 		}
 		if(8.0 <= x)
 		{
@@ -80,7 +80,7 @@ export namespace realmath
 		}
 		const std::uint8_t q = static_cast<std::uint8_t>(x);
 		x -= q;
-		return exp_limited(x) * realmath::pow(e, q);
+		return exp_limited(x) * kuma::pow(e, q);
 	}
 
 	constexpr float32_t exp_secure(float32_t x)noexcept
@@ -101,7 +101,7 @@ export namespace realmath
 	}
 }
 
-namespace realmath
+namespace kuma
 {
 	//a0 = exp(x/2^n) - 1
 	constexpr float64_t calc_a0(const float64_t x0)noexcept

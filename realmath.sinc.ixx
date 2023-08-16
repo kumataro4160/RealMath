@@ -6,7 +6,7 @@ export module realmath.sinc;
 
 export import realmath.basic;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t sinc_secure(float64_t x)noexcept;
 	constexpr float32_t sinc_secure(float32_t x)noexcept;
@@ -43,7 +43,7 @@ import realmath.iscloseto0;
 import realmath.isnan;
 import realmath.sin;
 
-export namespace realmath
+export namespace kuma
 {
 	constexpr float64_t sinc_secure(float64_t x)noexcept
 	{
