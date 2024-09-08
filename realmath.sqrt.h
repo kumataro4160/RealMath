@@ -2,7 +2,6 @@
 #define KUMATARO_INCLUDE_REALMATH_SQRT_H
 
 #include <cmath>
-
 #include "realmath.base.h"
 
 

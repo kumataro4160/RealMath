@@ -2,7 +2,6 @@
 #define KUMATARO_INCLUDE_REALMATH_NUMERIC_LIMITS__H
 
 #include <limits>
-
 #include "realmath.base.h"
 
 

@@ -2,7 +2,6 @@
 #define KUMATARO_INCLUDE_REALMATH_NUMBERS_H
 
 #include <numbers>
-
 #include "realmath.base.h"
 
 
