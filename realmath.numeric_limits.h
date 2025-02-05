@@ -1,8 +1,8 @@
-﻿#ifndef KUMATARO_INCLUDE_REALMATH_NUMERIC_LIMITS__H
-#define KUMATARO_INCLUDE_REALMATH_NUMERIC_LIMITS__H
+﻿#ifndef KUMATARO_INCLUDE_REALMATH_NUMERIC_LIMITS_H
+#define KUMATARO_INCLUDE_REALMATH_NUMERIC_LIMITS_H
 
-#include <limits>
 #include "realmath.base.h"
+#include <limits>
 
 
 namespace kuma

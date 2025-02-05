@@ -1,8 +1,8 @@
 ﻿#ifndef KUMATARO_INCLUDE_REALMATH_SQRT_H
 #define KUMATARO_INCLUDE_REALMATH_SQRT_H
 
-#include <cmath>
 #include "realmath.base.h"
+#include <cmath>
 
 
 namespace kuma

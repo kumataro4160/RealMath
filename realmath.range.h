@@ -1,7 +1,7 @@
 ﻿#ifndef KUMATARO_INCLUDE_REALMATH_RANGE_H
 #define KUMATARO_INCLUDE_REALMATH_RANGE_H
 
-#include <utility>
+#include <algorithm>
 
 
 namespace kuma
@@ -39,6 +39,10 @@ namespace kuma
 		constexpr T length()const noexcept
 		{
 			return u - l;
+		}
+		constexpr T clamp(T x)const noexcept
+		{
+			return std::clamp(x, l, u);
 		}
 	};
 }
