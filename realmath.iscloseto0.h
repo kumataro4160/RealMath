@@ -8,14 +8,14 @@
 
 namespace kuma
 {
-	constexpr bool iscloseto0(float64_t x)noexcept
+	constexpr bool iscloseto0(float64_t x, float64_t threshold = float64_t_min)noexcept
 	{
-		return abs(x) < float64_t_min;
+		return abs(x) < threshold;
 	}
 
-	constexpr bool iscloseto0(float32_t x)noexcept
+	constexpr bool iscloseto0(float32_t x, float32_t threshold = float32_t_min)noexcept
 	{
-		return abs(x) < float32_t_min;
+		return abs(x) < threshold;
 	}
 }
 
